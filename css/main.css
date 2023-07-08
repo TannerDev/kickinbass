@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Bangers', cursive;
+}
+
+#mainContainer {
+    min-height: 100%;
+}
+
+.contentContainer {
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    font-size: 4em;
+    letter-spacing: 5px;
+}
+
+#displayImage {
+    max-width: 500px;
+}
+
+.flexContainerColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flexContainerRow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexBasis50 {
+    flex-basis: 50%;
+}
+
+#imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 350px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.title, #count {
+    margin: 0.25em;
+    margin-bottom: -0.8em;
+}
+
+#castButton,
+#castButton:visited,
+#tryAgainButton,
+#tryAgainButton:visited
+ {
+    background-color: chartreuse;
+    color: #000;
+}
+
+#castButton:hover,
+#castButton:active,
+#tryAgainButton:hover,
+#tryAgainButton:active
+{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+
+#castButton, #tryAgainButton {
+    font-size: 2em;
+    padding: .5em;
+    border-radius: 10px;
+    border: 1px solid #000;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.disabled {
+    opacity: 0.4;
+}
+
+#tryAgainButton {
+    display: none;
+}
+
+#sunburst {
+    background-image: url('../images/sunburst.png');
+    width: 200px;
+    height: 168px;
+    position: absolute;
+    background-repeat-y: no-repeat;
+}
+
+p {
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+}
+
+#status {
+    display: none;
+    position: absolute;
+    width: 100%;
+    max-width: 370px;
+    left: 50%;
+    margin-left: -175px;
+    margin-top: -50px;
+}
+
+#status p {
+    display: inline-block;
+}
